@@ -1,0 +1,33 @@
+p {
+    color: blue;
+}
+
+header h1 {
+    color: cadetblue;
+}
+
+main p {
+    color: rgb(175, 232, 175);
+}
+
+#maintitle {
+    color: burlywood;
+}
+
+.orange {
+    color: orange;
+}
+
+i {
+    font-weight: bold;
+    color: red;
+}
+
+.bigger {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.purple {
+    color: purple;
+}
