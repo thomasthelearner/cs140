@@ -1,0 +1,29 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(245, 223, 184);
+    font-size: 18px;
+    color:rgb(104, 2, 130);
+}
+
+.section {
+    color:rgb(207, 68, 3);
+}
+
+.idea {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+code {
+    font-size: 15px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#favorite {
+    color:rgb(6, 89, 191);
+    font-style: italic;
+}
