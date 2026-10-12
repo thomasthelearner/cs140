@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+/* * {
+    outline: thin solid red;
+} */
+
+.p2 {
+    width: 250px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 7px;
+    border-width: 10px;
+    border-color: black;
+    border-style: dotted;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.p3 {
+    border: thin solid red;
+    padding: 50px 10px;
+    width: 50%;
+}
