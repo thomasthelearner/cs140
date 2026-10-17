@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 218, 218);
+    font-size: 18px;
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border: thin solid red;
+}
+
+header {
+    border: thin solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    box-shadow: 0 10px 10px rgba(228, 6, 6, 0.1);
+}
+
+h1 {
+    background-image: url('background.png');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-origin: content-box;
+}
+
+#floatfig {
+    float: left;
+}
+
+.figenforce {
+    clear: both;
+}
+
+nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+nav a {
+    border: thin solid black;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav a:hover{
+    background-color: lightgray;
+    color:rgb(223, 85, 85)
+}
+
+.boxer-fig {
+    border: 2px solid red;
+    width: 300px;
+    overflow: hidden;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic; 
+}
+
+.boxer-fig img{
+    width: 100%;
+}
+
+footer {
+    margin-top: auto;
+    margin-left: 30px;
+}
