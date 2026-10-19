@@ -1,0 +1,38 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fractional unit */
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px rgba(180,180,180,0.5);
+}
+
+.mommy {
+    display: grid;
+    grid-template-areas: "header header header header"
+                        "main main . sidebar"
+                        "footer footer footer footer";
+    gap: 10px;
+}
+
+.kida {
+    grid-area: header;
+}
+
+.kidb {
+    grid-area: main;
+}
+
+.kidc {
+    grid-area: sidebar;
+}
+
+.kidd {
+    grid-area: footer;
+}
