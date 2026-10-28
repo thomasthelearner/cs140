@@ -1,6 +1,7 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
+    width: 100%;
 }
 
 header {
@@ -39,7 +40,7 @@ nav a {
 
 figure {
     border: 2px solid black;
-    width: 300px;
+    width: 250px;
     margin: 10px;
     padding: 10px;
     box-shadow: 0 10px 10px black;
@@ -64,6 +65,11 @@ figcaption a {
     display: flex;
     flex-wrap: wrap;
 }
+
+@media ONLY screen AND (max-width: 768px) {
+    .mainrow {
+        flex-direction: column;
+    }
 
 @media print {
     nav {
