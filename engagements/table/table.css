@@ -46,3 +46,7 @@ tfoot th:hover {
 .red {
     color: red;
 }
+
+.tablediv {
+    overflow-x: auto;
+}
