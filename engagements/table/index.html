@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tom's Class Schedule</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
-    <main>
+    <header>
         <h1>Tom's Class Schedule</h1>
-        <table border="1">
+    </header>
+    <main>
+        <table id='schedule'>
             <caption>Class Schedule for Fall 2026 and Winter 2027</caption>
             <thead>
                 <tr>
@@ -69,11 +72,21 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th scope="rowgroup" colspan="5">Total Credits</th>
+                    <th scope="row" colspan="5">Total Credits</th>
                     <td>18</td>
                 </tr>
             </tfoot>
         </table>
+        <ol>
+            <li>When do you use a table? <i class="red">We will use tables to display data in a structured format.</i></li>
+            <li>When do you not use a table? <i class="red">When the data is not suitable for a tabular format or when a simple list is more appropriate.</i></li>
+            <li>When do you need to do extra work for table accessibility? <i class="red">When the table is complex or contains a lot of data, it may require additional work to ensure it is accessible to all users, including those with disabilities.</i></li>
+            <li>Which question you asked AI today helped you learn the most, and why? <i class="red">The question about the accessibility of tables. Because it helped me understand the importance of making tables accessible to all users, and how to label them properly and all.</i></li>
+            <li>Did AI ever try to give you more than you asked for, like writing your code? What did you do? <i class="red">Yes, sometimes AI provides more information than what is explicitly requested. In such cases, I try to focus on the relevant information and disregard the extra details.</i></li>
+            <li>Why don't we use the border attribute? <i class="red">Because CSS provides more control over the appearance of tables and is more maintainable.</i></li>
+            <li>What is the easiest way to color every other row a different color? <i class="red">The easiest way is to use the :nth-child() pseudo-class in CSS.</i></li>
+            <li>What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select. <i class="red">The value in the parentheses of a structural pseudo-class represents the position of the element within its parent. For example, :nth-child(2) would select the second child element of its parent.</i></li>
+        </ol>
     </main>
     <footer>
         <p>&copy; 2026 Tom's Class Schedule. All rights reserved.</p>

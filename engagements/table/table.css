@@ -1,0 +1,48 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#schedule {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+#schedule th, #schedule td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: rgb(75, 114, 186);
+    color: white;
+}
+
+td {
+    vertical-align: middle;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+td:last-child {
+    text-align: right;
+}
+
+tbody th:hover {
+    background-color: lightyellow;
+    color: black;
+}
+
+tfoot th:hover {
+    background-color: lightyellow;
+    color: black;
+}
+
+.red {
+    color: red;
+}
