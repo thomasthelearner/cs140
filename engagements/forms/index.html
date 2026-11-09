@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Sign up</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="post">
+            <div class="form-row">
+                <label for="personname">Full Name</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">-- Select a state --</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="CA">California</option>
+                    <option value="NY">New York</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+            <h2>Q&A</h2>
+            <ol>
+                <li>The form tag has an "action" attribute. What does it do? <i>(It specifies where to send the form data when the form is submitted.)</i></li>
+                <li>The form tag has a "method" attribute. What does it do? <i>(It specifies the HTTP method to use when submitting the form.)</i></li>
+                <li>What is the difference between a "POST" and a "GET"? <i>(POST is used to send data to the server, while GET is used to retrieve data from the server.)</i></li>
+                <li>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button. <i>(We use the "value" attribute to set a pre-set value, while a placeholder is just a hint that disappears when the user starts typing. With the text box, we use the "value" attribute to set the initial text. With the textarea, we use the "value" attribute to set the initial text. With the select box, we use the "value" attribute to set the selected option. With the checkbox, we use the "checked" attribute to set it as checked. With the radio button, we use the "checked" attribute to set it as checked.)</i></li>
+                <li>List all the form controls that HTML5 added. Which ones did you put in your form? <i>(HTML5 added several new form controls, including date, time, email, url, search, and range inputs. I put the email input in my form.)</i></li>
+            </ol>
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tom's Form Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
