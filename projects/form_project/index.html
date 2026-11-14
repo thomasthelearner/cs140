@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sign up</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="post">
+            <fieldset>
+                <legend>Sign Up Form</legend>
+                <div class="form-row">
+                    <label for="personname">Full Name</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" name="username" placeholder="Username">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <label for="bdate">Birth Date</label>
+                    <input id="bdate" type="date" name="bdate">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-row">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <option value="">-- Select a state --</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="CA">California</option>
+                        <option value="NY">New York</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender</div>
+                    <label><input type='radio' name='gender' value='male'> Male</label>
+                    <label><input type='radio' name='gender' value='female'> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <!-- <div class="check-row">
+                    <div class="spacer"></div> -->
+                <!-- <div class="space"></div> -->
+                <div class="term-group">
+                    <input type='checkbox' id="terms" name="terms"> 
+                    <label for="terms">I agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.</label>
+                </div>
+                <div class="form-row submit-row">
+                    <input type="submit" name="signup" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tom's Form Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
