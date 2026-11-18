@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,53 +15,55 @@
         <form action="formprocessing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up Form</legend>
-                <div class="form-row">
-                    <label for="personname">Full Name</label>
-                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
-                </div>
-                <div class="form-row">
-                    <label for="username">Username</label>
-                    <input id="username" type="text" name="username" placeholder="Username">
-                </div>
-                <div class="form-row">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="Email">
-                </div>
-                <div class="form-row">
-                    <label for="bdate">Birth Date</label>
-                    <input id="bdate" type="date" name="bdate">
-                </div>
-                <div class="form-row">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" name="password" placeholder="Password">
-                </div>
-                <div class="form-row">
-                    <label for="state">State</label>
-                    <select id="state" name="state">
-                        <option value="">-- Select a state --</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="CA">California</option>
-                        <option value="NY">New York</option>
-                    </select>
-                </div>
-                <div class="check-row">
-                    <div class="spacer">Gender</div>
-                    <label><input type='radio' name='gender' value='male'> Male</label>
-                    <label><input type='radio' name='gender' value='female'> Female</label>
-                </div>
-                <div class="form-row">
-                    <label for="comments">Comments</label>
-                    <textarea id="comments" name="comments"></textarea>
-                </div>
-                <!-- <div class="check-row">
-                    <div class="spacer"></div> -->
-                <!-- <div class="space"></div> -->
-                <div class="term-group">
-                    <input type='checkbox' id="terms" name="terms"> 
-                    <label for="terms">I agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.</label>
-                </div>
-                <div class="form-row submit-row">
-                    <input type="submit" name="signup" value="Sign Up">
+                <div id="message"> 
+                    <div class="form-row">
+                        <label for="personname">Full Name</label>
+                        <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-row">
+                        <label for="bdate">Birth Date</label>
+                        <input id="bdate" type="date" name="bdate">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-row">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">-- Select a state --</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="CA">California</option>
+                            <option value="NY">New York</option>
+                        </select>
+                    </div>
+                    <div class="check-row">
+                        <div class="spacer">Gender</div>
+                        <label><input type='radio' name='gender' value='male'> Male</label>
+                        <label><input type='radio' name='gender' value='female'> Female</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <!-- <div class="check-row">
+                        <div class="spacer"></div> -->
+                    <!-- <div class="space"></div> -->
+                    <div class="term-group">
+                        <input type='checkbox' id="terms" name="terms"> 
+                        <label for="terms">I agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.</label>
+                    </div>
+                    <div class="form-row submit-row">
+                        <input type="submit" name="signup" value="Sign Up">
+                    </div>
                 </div>
             </fieldset>
         </form>
@@ -71,12 +74,16 @@
             <li>What is jQuery? Is it still popular today? <i>(jQuery is a JavaScript library—a collection of ready-made tools that makes tasks like changing HTML, responding to clicks, and adding animations easier. It uses JavaScript; it is not a separate programming language. And it's still widely used nowadays.)</i></li>
             <li>What is the most popular front-end js library today? <i>(React is the most popular front-end JavaScript library by developer usage in Stack Overflow’s 2026 survey, with about 42% of respondents using it.)</i></li>
             <li>How does your code prevent the form from being submitted? Why do we need to prevent it? <i>(event.preventDefault() stops the browser’s normal form submission. Normally, submitting a form sends its data to the form’s destination and can load another page. Preventing that lets your JavaScript display feedback or send the data without leaving the current page. It does not send or save the data by itself.)</i></li>
+            <li>What is AJAX? <i>(AJAX stands for Asynchronous JavaScript and XML. It is a technique for creating interactive web applications by allowing the browser to send and receive data from a server asynchronously, without reloading the page.)</i></li>
+            <li>Why do you put your JS Code in a separate file? <i>(Putting JavaScript in a separate file helps to keep the HTML code clean and maintainable. It also allows for code reusability and better organization of the application.)</i></li>
+            <li>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error? <i>(You can use the browser's DevTools to set breakpoints, step through code, and inspect variables. The console will show error messages with line numbers where the error occurred.)</i></li>
+            <li>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit. <i>(Yes and I don't have any errors. My ids list are: myForm, personname, username, email, bdate, password)</i></li>
         </ol>
     </main>
     <footer>
         <p>&copy; 2026 Tom's Form Website. All rights reserved.</p>
     </footer>
-    <script>
+    <!-- <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
             event.preventDefault();
             alert("Form submitted!");
@@ -106,7 +113,25 @@
             };
 
             console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'submit.json', true);
+            xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    //alert('Form submitted successfully.');
+                    message = document.getElementById('message');
+                    const response = JSON.parse(xhr.responseText);
+                    message.textContent = response.message;
+                    form = document.getElementById('myForm');
+                    form.reset();
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            };
+            xhr.send(JSON.stringify(formData));
+            /*when trying to use f-string, we have to use backticks instead of single quotes, and use ${} to insert variables into the string. */
+            alert(`Success: ${fullname}, your form has been submitted.`);
         });
-    </script>
+    </script> -->
 </body>
 </html>
