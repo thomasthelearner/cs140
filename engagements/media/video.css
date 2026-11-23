@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+iframe {
+    border: 0;
+}
+
+#video {
+    width: 350px;
+    margin: 0;
+    border: thin solid black;
+    box-shadow: 0px 0px 5px #888888;
+    transform: scale(1.0);
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    color:aquamarine;
+    background-color:rgb(241, 125, 71);
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    /* transition-duration: 3s;
+    transition-property: background-color, color;
+    transition-timing-function: ease-in-out; */
+    transition: background-color 3s ease-in-out, color 3s ease-in-out;
+    transition-delay: 2s;
+}
+
+.button:hover {
+    background-color:lightgoldenrodyellow;
+    color:cornflowerblue;
+}
